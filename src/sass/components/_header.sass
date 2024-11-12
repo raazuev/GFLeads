@@ -1,0 +1,38 @@
+.navbar
+    display: flex
+    align-items: flex-end
+    padding: 30px
+    border-bottom: 1px solid rgba(37, 47, 74, 0.2)
+    overflow: hidden
+    position: fixed
+    z-index: 2
+    width: 100%
+    transition: .4s ease
+    .nav-link
+        font-family: Inter
+        font-size: 15px
+        font-weight: 400
+        line-height: 26px
+        color: rgba(37, 47, 74, 0.7)
+        transition: all .5s ease
+        position: relative
+        &:hover
+            color: #252F4A
+        &:hover::before
+            content: ''
+            left: 50%
+            width: 100%
+            transform: translateX(-50%)
+            bottom: 1px
+            position: absolute
+            background-color: #FFC107
+            border-bottom: 1px solid #FFC107  
+    button
+        padding: 8px 33px
+        border: 1px solid #d3d5db
+        border-radius: 8px
+        font-family: Inter
+        font-size: 14px
+        font-weight: 600
+        line-height: 16.94px
+        color: #252F4A

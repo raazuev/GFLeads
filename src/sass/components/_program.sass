@@ -1,0 +1,80 @@
+.text-center
+    button
+        background-color: transparent
+        color: #196FF1
+        border: 1px solid #196FF1
+        font-family: Inter
+        font-size: 16px
+        font-weight: 600
+        line-height: 19.36px
+        padding: 10px 21px
+        &:hover
+            background-color: #196FF1
+        &:focus
+           background-color: #0e213d 
+.slide-item
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-evenly
+    .step-indicator 
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 20px
+        .step-title
+            font-family: Inter
+            font-size: 16px
+            font-weight: 600
+            line-height: 19.36px
+            margin-bottom: 10px
+        .step
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            margin: 10px 0
+            font-size: 14px
+            font-weight: bold
+            color: #2ecc71
+            border: 2px solid #2ecc71
+            &.active
+                background-color: #2ecc71
+                color: #fff
+            &:not(:last-child)::after
+                content: ''
+                position: absolute
+                bottom: -22px
+                width: 2px
+                height: 21px
+                background-color: #2ecc71
+    .left
+        display: flex
+        flex-direction: column
+        gap: 20px
+        h3
+            font-family: Inter
+            font-size: 20px
+            font-weight: 600
+            line-height: 24.2px
+            color: #196FF1
+        .btn-primary
+            margin-top: 40px
+            width: 188px
+            height: 50px
+            outline: none
+            background-color: #FFD040
+            font-family: Inter
+            font-size: 16px
+            font-weight: 600
+            line-height: 19.36px
+            color: #252F4A
+        .btn-secondary
+            border-radius: 100%
+            border: none
+            width: 44px
+            height: 44px
+            background-color: #539DF5
