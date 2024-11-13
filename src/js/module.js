@@ -21,3 +21,4 @@ loadModule('program', 'module/program.html');
 loadModule('key', 'module/key.html');
 loadModule('service', 'module/service.html');
 loadModule('partner', 'module/partner.html');
+loadModule('video', 'module/video.html');
